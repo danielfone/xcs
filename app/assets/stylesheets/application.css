@@ -76,3 +76,7 @@ dd {
 dt {
   color: #777;
 }
+
+sup.fa-external-link {
+  font-size: 50%;
+}
