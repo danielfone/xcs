@@ -12,7 +12,7 @@
     <% if flash.present? %>
       <div class="flash-container">
         <% flash.each do |type, message| %>
-          <%= content_tag :div, class: [:flash, type, 'alert'] do -%>
+          <%= content_tag :div, class: [:flash, type] do -%>
             <%= message %>
           <%- end -%>
         <% end %>

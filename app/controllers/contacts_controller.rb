@@ -10,6 +10,7 @@ class ContactsController < ApplicationController
 
   def sync
     Xero::ContactPullJob.perform_now
+    flash[:success] = "Syncd contacts from Xero"
     redirect_back fallback_location: :index
   end
 
@@ -22,7 +23,7 @@ private
   end
 
   def render_xero_error(error)
-    flash[:danger] = "[Xero Error] #{error.message}"
+    flash[:error] = "[Xero Error] #{error.message}"
     redirect_back fallback_location: :root
   end
 

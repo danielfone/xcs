@@ -17,6 +17,7 @@
     <tr>
       <th>Name</th>
       <th>Status</th>
+      <th></th>
     </tr>
   </thead>
 
@@ -30,9 +31,9 @@
           <%= contact.status %>
         </td>
         <td>
-          <dl>
+          <dl class="extra-data">
           <% contact.data.each do |attr, value| %>
-          <dt><%= attr %></dt>
+          <dt><%= attr.humanize %></dt>
           <dd><%= value %></dd>
           <% end %>
           </dl>
