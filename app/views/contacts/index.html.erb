@@ -1,0 +1,27 @@
+<h2>Xero Contacts</h2>
+
+<div class="alert alert-info">
+  <p>
+    Showing <%= pluralize(@contacts.size, "contacts") %>.
+  </p>
+</div>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td>
+          <%= contact.xero_id %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
