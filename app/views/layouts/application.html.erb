@@ -8,6 +8,18 @@
   </head>
 
   <body>
+
+    <% if flash.present? %>
+      <div class="flash-container">
+        <% flash.each do |type, message| %>
+          <%= content_tag :div, class: [:flash, type, 'alert'] do -%>
+            <%= message %>
+          <%- end -%>
+        <% end %>
+      </div>
+    <% end %>
+
+
     <%= yield %>
   </body>
 </html>

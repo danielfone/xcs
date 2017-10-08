@@ -2,6 +2,8 @@ class ContactsController < ApplicationController
 
   helper_method :external_link_to
 
+  rescue_from Xero::Error, with: :render_xero_error
+
   def index
     @contacts = Xero::Contact.all.order(:name)
   end
@@ -17,6 +19,11 @@ private
     view_context.link_to options, html_options.merge(target: '_blank') do
       name
     end
+  end
+
+  def render_xero_error(error)
+    flash[:danger] = "[Xero Error] #{error.message}"
+    redirect_back fallback_location: :root
   end
 
 end
