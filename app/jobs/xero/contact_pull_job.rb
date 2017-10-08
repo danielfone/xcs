@@ -3,6 +3,8 @@ module Xero
 
     def perform
       Error.wrap { Contact.upsert_api_response(api_results) }
+      # I wish we could just add the org code to each record
+      # as we were saving it…
       Contact.update_all org_code: org_code
     end
 

@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20171008082919) do
     t.string "name"
     t.string "status"
     t.string "org_code"
+    t.datetime "synced_at"
     t.json "data", default: {}, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -5,6 +5,7 @@ class CreateXeroContacts < ActiveRecord::Migration[5.1]
       t.string :name
       t.string :status
       t.string :org_code
+      t.datetime :synced_at
       t.json :data, null: false, default: {}
 
       t.timestamps

@@ -20,12 +20,17 @@ module Xero
         name: contact[:name],
         status: (contact[:contact_status] || 'ACTIVE'),
         updated_at: (contact[:updated_date_utc] if contact[:updated_date_utc]),
+        synced_at: Time.current,
         data: contact.attributes,
       )
     end
 
     def self.last_updated_at
       maximum(:updated_at)
+    end
+
+    def self.last_synced_at
+      maximum(:synced_at)
     end
 
     def xero_url
