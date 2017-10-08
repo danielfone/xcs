@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
 
   def sync
     Xero::ContactPullJob.perform_now
-    flash[:success] = "Syncd contacts from Xero"
+    flash[:success] = "Updated contacts from Xero"
     redirect_back fallback_location: :index
   end
 

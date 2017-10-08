@@ -15,6 +15,7 @@ module Xero
     end
 
     def self.upsert_api_result(contact)
+      # https://github.com/jesjos/active_record_upsert
       upsert(
         id: contact[:contact_id],
         name: contact[:name],
@@ -33,6 +34,7 @@ module Xero
       maximum(:synced_at)
     end
 
+    # https://developer.xero.com/documentation/api-guides/deep-link-xero
     def xero_url
       target = "/Contacts/View.aspx?contactID=#{id}"
       format(DEEP_LINK_URL, shortcode: org_code, target_url: target)

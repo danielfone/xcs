@@ -10,22 +10,29 @@ module Xero
 
   private
 
+    # https://developer.xero.com/documentation/api/organisation
     def org_code
       @org_code ||= api_client.Organisation.first.short_code
     end
 
     def api_results
       Error.wrap do
-        api_client.Contact.all(modified_since: Contact.last_updated_at)
+        # https://developer.xero.com/documentation/api/contacts
+        api_client.Contact.all(
+          modified_since: Contact.last_updated_at,
+          include_archived: true,
+        )
       end
     end
 
+    # https://github.com/waynerobinson/xeroizer
     def api_client
       @api_client ||= Xeroizer::PrivateApplication.new(
         secrets[:consumer_key],
         secrets[:consumer_secret],
         nil,
         private_key: secrets[:private_key],
+        # logger: Logger.new(STDOUT)
       )
     end
 
