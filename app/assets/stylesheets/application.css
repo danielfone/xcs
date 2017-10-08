@@ -15,9 +15,13 @@
  */
 
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0 1em;
 }
+
+h2 { font-family: 'Raleway', sans-serif  }
+
+a { text-decoration: none; }
 
 .flash {
   padding: 1em;
@@ -38,11 +42,11 @@ table {
 }
 
 thead th {
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #ddd;
 }
 
 tbody td {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 
 th { text-align: left; }
@@ -79,4 +83,9 @@ dt {
 
 sup.fa-external-link {
   font-size: 50%;
+}
+
+.struck-out-element * {
+  text-decoration: line-through;
+  color: #ccc;
 }

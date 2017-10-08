@@ -40,5 +40,9 @@ module Xero
       format(DEEP_LINK_URL, shortcode: org_code, target_url: target)
     end
 
+    def muted?
+      status == 'ARCHIVED'
+    end
+
   end
 end
