@@ -16,6 +16,10 @@ gem 'puma', '~> 3.7'
 gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# Provide access to the Xero API
+gem 'xeroizer'
+# Upsert records from Xero
+gem 'active_record_upsert'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

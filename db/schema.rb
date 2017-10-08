@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20171008082919) do
   create_table "xero_contacts", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "name"
     t.string "status"
+    t.string "org_code"
     t.json "data", default: {}, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
