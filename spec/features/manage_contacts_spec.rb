@@ -63,4 +63,10 @@ RSpec.feature 'Manage Xero contacts', type: :feature do
     expect(page).to have_link('24 Locks', href: 'https://go.xero.com/organisationlogin/default.aspx?shortcode=!GjVms&redirecturl=/Contacts/View.aspx?contactID=f1d403d1-7d30-46c2-a2be-fc2bb29bd295')
   end
 
+  scenario 'The config is misconfigured' do
+    Rails.application.secrets[:xero][:consumer_key] = 'foo'
+    click_on 'Sync Now'
+    expect(page).to have_content '[Xero Error] Consumer key is incorrect'
+  end
+
 end

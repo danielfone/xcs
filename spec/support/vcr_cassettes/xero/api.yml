@@ -747,4 +747,48 @@ http_interactions:
         \   </Organisation>\r\n  </Organisations>\r\n</Response>"
     http_version: 
   recorded_at: Mon, 09 Oct 2017 01:29:48 GMT
+- request:
+    method: get
+    uri: https://api.xero.com/api.xro/2.0/Contacts?includeArchived=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Charset:
+      - utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.5.3
+      Authorization:
+      - OAuth oauth_consumer_key="foo", oauth_nonce="LTQpX6mo6G8ISbuc3AIjFe6wAFPKopzemX3Hv03M48",
+        oauth_signature="oF5WmdfjcO2joXYvTui1%2BB8RdhkPkekbStfDTR4u977xtpuPvqQnTCqLTnP%2F8HBURcFGwbK6BJ1YEz%2FaUT%2BVi1P%2B%2BTxol4Szku5RtWX9VbvWxinjmz3rjQO8Ry2H1tkdgoBwiFAAThfD1qHFHVgho%2BS3XU1yYKaZ62LqaTwXqcc%3D",
+        oauth_signature_method="RSA-SHA1", oauth_timestamp="1507593600", oauth_token="foo",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 09 Oct 2017 07:41:50 GMT
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="10.144.115.64"
+      Content-Length:
+      - '95'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: oauth_problem=consumer_key_unknown&oauth_problem_advice=Consumer%20key%20was%20not%20recognised
+    http_version: 
+  recorded_at: Tue, 10 Oct 2017 00:00:00 GMT
 recorded_with: VCR 3.0.3
