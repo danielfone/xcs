@@ -1,0 +1,750 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.xero.com/api.xro/2.0/Contacts?includeArchived=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Charset:
+      - utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.5.3
+      Authorization:
+      - OAuth oauth_consumer_key="<XERO_CONSUMER_KEY>", oauth_nonce="26nBMQqwFvQ7L1swujPe1EgtpRjY0ROnxsG1ViBdA",
+        oauth_signature="c6XBJ35WAjhgZVsc%2Bz5Nki1RbfUjX4y04RDOrnogGdAbsVQrpNBNiTCf2VoK0Kg4PapRKFUYtERdV%2F%2BCUlYygLNweCeXqUFaMpAOv%2Biw8l%2Bm1y7GQ5kKQs8MPPAOaHaHTKie7aqk4tCM4425GFvU3R9qrdCNhwJFFAQYSBpH%2FBU%3D",
+        oauth_signature_method="RSA-SHA1", oauth_timestamp="1507512585", oauth_token="<XERO_CONSUMER_KEY>",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Mon, 09 Oct 2017 01:29:45 GMT
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '8060'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: "<Response xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n
+        \ <Id>5b7119b6-34b2-4c91-8d19-6938c07f0d67</Id>\r\n  <Status>OK</Status>\r\n
+        \ <ProviderName>Chch Ruby</ProviderName>\r\n  <DateTimeUTC>2017-10-09T01:29:46.9269794Z</DateTimeUTC>\r\n
+        \ <Contacts>\r\n    <Contact>\r\n      <ContactID>6d42f03b-181f-43e3-93fb-2025c012de92</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Wilson Periodicals</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <DefaultCurrency>NZD</DefaultCurrency>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>2b6d2035-ded0-45a7-b2ad-4b01c788eaef</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Ridgeway Bank</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>2a7f9bc5-d0fe-40bf-834d-6c7be44307e7</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Woolworths Market</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>add5b147-1013-4737-9641-7813d91b7fa9</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Gable Print</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>779a7956-6600-444e-90fd-860eaa30901c</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Fulton Airport Parking</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>9954ba5c-0451-43b0-a9ea-89612622fe3f</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Dimples Warehouse</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <DefaultCurrency>NZD</DefaultCurrency>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>f4bcc6c9-d955-4466-a54d-92bd02039a3c</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Arabica Cafe</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <DefaultCurrency>NZD</DefaultCurrency>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>baf81bcb-eebf-4b8a-977d-95b11f593800</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Berry Brew</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>873c07a8-511a-420d-a664-a01a50834730</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Office Supplies Company</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>c37099f9-b207-4c0a-84de-a635eea70167</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Espresso 31</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>8c555bc8-8098-43cd-bfa1-acd5573db5d6</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Melrose Parking</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>f6d22144-89b8-4741-a92c-b4d668613709</ContactID>\r\n      <ContactStatus>ARCHIVED</ContactStatus>\r\n
+        \     <Name>Power Direct</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <DefaultCurrency>NZD</DefaultCurrency>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>ae136984-5d9a-4025-a045-bf4dc42730ea</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Brunswick Petals</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>b10e50e4-53cf-4655-bd20-eb8c4b780f68</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Coco Cafe</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>f1d403d1-7d30-46c2-a2be-fc2bb29bd295</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>24 Locks</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.28</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>b24c9042-f610-451e-b317-1a8d5712602f</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Gateway Motors</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>349227</PhoneNumber>\r\n
+        \         <PhoneAreaCode>800</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>aa5b440f-ac5f-426b-9437-1ab0ec8a24f3</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Carlton Functions</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>9179945</PhoneNumber>\r\n
+        \         <PhoneAreaCode>02</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>0af90bb3-9ad0-49b2-a884-2c565c16078d</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Net Connect</Name>\r\n
+        \     <BankAccountDetails>23-4567-890123-45</BankAccountDetails>\r\n      <TaxNumber>15%
+        GST on Expenses</TaxNumber>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n          <AddressLine1>P O
+        Box 7900</AddressLine1>\r\n          <AddressLine2>South Mailing Centre</AddressLine2>\r\n
+        \         <City>Oaktown</City>\r\n          <PostalCode>1236</PostalCode>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>500998</PhoneNumber>\r\n
+        \         <PhoneAreaCode>800</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n          <PhoneNumber>500999</PhoneNumber>\r\n
+        \         <PhoneAreaCode>800</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <Balances>\r\n        <AccountsReceivable>\r\n
+        \         <Outstanding>0.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsReceivable>\r\n        <AccountsPayable>\r\n          <Outstanding>54.13</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsPayable>\r\n      </Balances>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>9b9ba9e5-e907-4b4e-8210-54d82b0aa479</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>PowerDirect</Name>\r\n      <BankAccountDetails>34-5678-901234-56</BankAccountDetails>\r\n
+        \     <TaxNumber>15% GST on Expenses</TaxNumber>\r\n      <Addresses>\r\n
+        \       <Address>\r\n          <AddressType>POBOX</AddressType>\r\n          <AddressLine1>P
+        O Box 8900</AddressLine1>\r\n          <AddressLine2>Central Mailing Centre</AddressLine2>\r\n
+        \         <City>Oaktown</City>\r\n          <PostalCode>1288</PostalCode>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>887612</PhoneNumber>\r\n
+        \         <PhoneAreaCode>800</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n          <PhoneNumber>887613</PhoneNumber>\r\n
+        \         <PhoneAreaCode>800</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <DefaultCurrency>NZD</DefaultCurrency>\r\n
+        \     <Balances>\r\n        <AccountsReceivable>\r\n          <Outstanding>0.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsReceivable>\r\n        <AccountsPayable>\r\n
+        \         <Outstanding>108.60</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsPayable>\r\n      </Balances>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>6f57ea79-6d24-4a5b-8742-6f00662740dd</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Capital Cab Co</Name>\r\n
+        \     <BankAccountDetails>12-3456-789012-34</BankAccountDetails>\r\n      <Addresses>\r\n
+        \       <Address>\r\n          <AddressType>POBOX</AddressType>\r\n        </Address>\r\n
+        \       <Address>\r\n          <AddressType>STREET</AddressType>\r\n        </Address>\r\n
+        \     </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>235689</PhoneNumber>\r\n          <PhoneAreaCode>800</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n
+        \     <IsSupplier>true</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <Balances>\r\n        <AccountsReceivable>\r\n          <Outstanding>0.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsReceivable>\r\n        <AccountsPayable>\r\n
+        \         <Outstanding>242.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsPayable>\r\n      </Balances>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>16b4cdc2-b36a-4b25-b9c8-7a50c17b10ba</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Truxton Property
+        Management</Name>\r\n      <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>9157357</PhoneNumber>\r\n
+        \         <PhoneAreaCode>02</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>19ca28fa-75ac-4994-b479-7c2ec9348c74</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>PC Complete</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>322600</PhoneNumber>\r\n
+        \         <PhoneAreaCode>800</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>bde095a6-1c01-4e1d-b6f4-9190cfe89a9c</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>ABC Furniture</Name>\r\n
+        \     <FirstName>Trish</FirstName>\r\n      <LastName>Rawlings</LastName>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>124578</PhoneNumber>\r\n
+        \         <PhoneAreaCode>800</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <DefaultCurrency>NZD</DefaultCurrency>\r\n
+        \     <Balances>\r\n        <AccountsReceivable>\r\n          <Outstanding>0.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsReceivable>\r\n        <AccountsPayable>\r\n
+        \         <Outstanding>1150.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsPayable>\r\n      </Balances>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>a1eaf3b8-91dd-4bcb-9393-aee19fe70189</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>SMART Agency</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>9159889</PhoneNumber>\r\n
+        \         <PhoneAreaCode>02</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <Balances>\r\n        <AccountsReceivable>\r\n
+        \         <Outstanding>0.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsReceivable>\r\n        <AccountsPayable>\r\n          <Outstanding>4500.00</Outstanding>\r\n
+        \         <Overdue>4500.00</Overdue>\r\n        </AccountsPayable>\r\n      </Balances>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>f8a34028-83c6-4cc2-91ed-bada1ba04ff5</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>MCO Cleaning Services</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>5119119</PhoneNumber>\r\n          <PhoneAreaCode>02</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n
+        \     <IsSupplier>true</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>c5f9cb5b-2125-4e70-b83e-beac7d9cc6b2</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Hoyt Productions</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>7411234</PhoneNumber>\r\n          <PhoneAreaCode>02</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n
+        \     <IsSupplier>true</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>3987133b-4faa-4fa5-b703-d0cafb3f7177</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Swanston Security</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>112113</PhoneNumber>\r\n          <PhoneAreaCode>800</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n
+        \     <IsSupplier>true</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <Balances>\r\n        <AccountsReceivable>\r\n          <Outstanding>0.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsReceivable>\r\n        <AccountsPayable>\r\n
+        \         <Outstanding>59.54</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsPayable>\r\n      </Balances>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>e884b133-0d53-4883-ae8e-eabe4afc7350</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Central Copiers</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>244844</PhoneNumber>\r\n
+        \         <PhoneAreaCode>800</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <Balances>\r\n        <AccountsReceivable>\r\n
+        \         <Outstanding>0.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsReceivable>\r\n        <AccountsPayable>\r\n          <Outstanding>163.56</Outstanding>\r\n
+        \         <Overdue>163.56</Overdue>\r\n        </AccountsPayable>\r\n      </Balances>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>40c72a58-0a4a-4eae-a622-f3549405e2df</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Xero</Name>\r\n      <Addresses>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>9376</PhoneNumber>\r\n
+        \         <PhoneAreaCode>438</PhoneAreaCode>\r\n          <PhoneCountryCode>0800</PhoneCountryCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n
+        \     <IsSupplier>true</IsSupplier>\r\n      <IsCustomer>false</IsCustomer>\r\n
+        \     <Balances>\r\n        <AccountsReceivable>\r\n          <Outstanding>0.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsReceivable>\r\n        <AccountsPayable>\r\n
+        \         <Outstanding>56.35</Outstanding>\r\n          <Overdue>56.35</Overdue>\r\n
+        \       </AccountsPayable>\r\n      </Balances>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>2e29540e-1a00-4c23-bbc9-f4db029c7586</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Bayside Wholesale</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>55669</PhoneNumber>\r\n
+        \         <PhoneAreaCode>850</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.297</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <Balances>\r\n        <AccountsReceivable>\r\n
+        \         <Outstanding>0.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsReceivable>\r\n        <AccountsPayable>\r\n          <Outstanding>840.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsPayable>\r\n      </Balances>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>6170fb21-2766-4af9-81e5-0d73f5243c23</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Petrie McLoud Watson &amp; Associates</Name>\r\n      <FirstName>Morris</FirstName>\r\n
+        \     <LastName>McKenzie</LastName>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>4561</PhoneNumber>\r\n          <PhoneAreaCode>915</PhoneAreaCode>\r\n
+        \         <PhoneCountryCode>02</PhoneCountryCode>\r\n        </Phone>\r\n
+        \       <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n
+        \       <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n
+        \     </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>true</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>1d8e804c-c2e7-44fe-9606-2517de3c6441</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>City Agency</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>9173555</PhoneNumber>\r\n          <PhoneAreaCode>01</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>true</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>b319b3b5-373b-4f3a-874f-2c9acd3e5f8d</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Boom FM</Name>\r\n      <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \         <AttentionTo>Human Resources Manager</AttentionTo>\r\n        </Address>\r\n
+        \     </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>9191</PhoneNumber>\r\n          <PhoneAreaCode>555</PhoneAreaCode>\r\n
+        \         <PhoneCountryCode>01</PhoneCountryCode>\r\n        </Phone>\r\n
+        \       <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n
+        \       <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n
+        \     </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>true</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>8a8fb8ad-e6ff-4c3e-b871-515124e40840</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Marine Systems</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n          <AttentionTo>Accounts
+        Dept</AttentionTo>\r\n        </Address>\r\n      </Addresses>\r\n      <Phones>\r\n
+        \       <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n
+        \       <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>9786456</PhoneNumber>\r\n
+        \         <PhoneAreaCode>02</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>true</IsCustomer>\r\n      <Balances>\r\n        <AccountsReceivable>\r\n
+        \         <Outstanding>396.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsReceivable>\r\n        <AccountsPayable>\r\n          <Outstanding>0.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsPayable>\r\n      </Balances>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>16c56769-c3c8-4dad-bd40-523f83bfe017</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Bayside Club</Name>\r\n      <FirstName>Bob</FirstName>\r\n      <LastName>Partridge</LastName>\r\n
+        \     <EmailAddress>secretarybob@bsclub.co</EmailAddress>\r\n      <SkypeUserName>bayside577</SkypeUserName>\r\n
+        \     <BankAccountDetails>98-0918-03451237-00</BankAccountDetails>\r\n      <TaxNumber>90-987-789</TaxNumber>\r\n
+        \     <AccountsReceivableTaxType>OUTPUT2</AccountsReceivableTaxType>\r\n      <Addresses>\r\n
+        \       <Address>\r\n          <AddressType>STREET</AddressType>\r\n          <AddressLine1>148
+        Bay Harbour Road</AddressLine1>\r\n          <City>Ridge Heights</City>\r\n
+        \         <Region>Madeupville</Region>\r\n          <PostalCode>6001</PostalCode>\r\n
+        \         <Country>New Zealand</Country>\r\n          <AttentionTo>Club Secretary</AttentionTo>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \         <AddressLine1>P O Box 3354</AddressLine1>\r\n          <AddressLine2>South
+        Mailing Centre</AddressLine2>\r\n          <City>Ridge Heights</City>\r\n
+        \         <Region>Madeupville</Region>\r\n          <PostalCode>6001</PostalCode>\r\n
+        \         <Country>New Zealand</Country>\r\n          <AttentionTo>Club Secretary</AttentionTo>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n          <PhoneNumber>2024418</PhoneNumber>\r\n
+        \         <PhoneAreaCode>02</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>2024455</PhoneNumber>\r\n
+        \         <PhoneAreaCode>02</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n          <PhoneNumber>2025566</PhoneNumber>\r\n
+        \         <PhoneAreaCode>02</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n          <PhoneNumber>7774455</PhoneNumber>\r\n
+        \         <PhoneAreaCode>01</PhoneAreaCode>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n      <IsSupplier>true</IsSupplier>\r\n
+        \     <IsCustomer>true</IsCustomer>\r\n      <DefaultCurrency>NZD</DefaultCurrency>\r\n
+        \     <Balances>\r\n        <AccountsReceivable>\r\n          <Outstanding>234.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsReceivable>\r\n        <AccountsPayable>\r\n
+        \         <Outstanding>130.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsPayable>\r\n      </Balances>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>e1120641-c8d5-4e51-962c-52d1d1086a92</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Basket Case</Name>\r\n
+        \     <FirstName>Mary</FirstName>\r\n      <LastName>Munn</LastName>\r\n      <EmailAddress>shop@basketcase.co</EmailAddress>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \         <AddressLine1>Shop 14 Ridgeway Mall</AddressLine1>\r\n          <AddressLine2>500
+        River Road</AddressLine2>\r\n          <City>Pinehaven</City>\r\n          <PostalCode>9877</PostalCode>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \         <AddressLine1>10 Holland Street</AddressLine1>\r\n          <AddressLine2>Te
+        Aro</AddressLine2>\r\n          <City>Wellington</City>\r\n          <PostalCode>6011</PostalCode>\r\n
+        \         <Country>New Zealand</Country>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>9176665</PhoneNumber>\r\n          <PhoneAreaCode>02</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \         <PhoneNumber>7773001</PhoneNumber>\r\n          <PhoneAreaCode>01</PhoneAreaCode>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>true</IsCustomer>\r\n
+        \     <Balances>\r\n        <AccountsReceivable>\r\n          <Outstanding>914.55</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsReceivable>\r\n        <AccountsPayable>\r\n
+        \         <Outstanding>0.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsPayable>\r\n      </Balances>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>0e0639b6-0153-4cf1-8dcd-5da1a6cb4d62</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Rex Media Group</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>4546789</PhoneNumber>\r\n
+        \         <PhoneAreaCode>01</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>true</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>fef6755f-549b-4617-b1e9-60bdffb517d8</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Ridgeway University</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \         <AttentionTo>Accounts Dept</AttentionTo>\r\n        </Address>\r\n
+        \     </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>8005001</PhoneNumber>\r\n          <PhoneAreaCode>01</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \         <PhoneNumber>7775001</PhoneNumber>\r\n          <PhoneAreaCode>01</PhoneAreaCode>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>true</IsCustomer>\r\n
+        \     <DefaultCurrency>NZD</DefaultCurrency>\r\n      <Balances>\r\n        <AccountsReceivable>\r\n
+        \         <Outstanding>6187.50</Outstanding>\r\n          <Overdue>6187.50</Overdue>\r\n
+        \       </AccountsReceivable>\r\n        <AccountsPayable>\r\n          <Outstanding>0.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsPayable>\r\n      </Balances>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>46aa21e5-da3d-4e09-a5c5-9e5f3c996ad7</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>City Limousines</Name>\r\n      <FirstName>Martin</FirstName>\r\n
+        \     <LastName>Dale</LastName>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n          <AttentionTo>Accounts
+        Dept</AttentionTo>\r\n        </Address>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>8004001</PhoneNumber>\r\n
+        \         <PhoneAreaCode>01</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n          <PhoneNumber>7774001</PhoneNumber>\r\n
+        \         <PhoneAreaCode>01</PhoneAreaCode>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>true</IsCustomer>\r\n      <Balances>\r\n        <AccountsReceivable>\r\n
+        \         <Outstanding>1169.95</Outstanding>\r\n          <Overdue>519.95</Overdue>\r\n
+        \       </AccountsReceivable>\r\n        <AccountsPayable>\r\n          <Outstanding>0.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsPayable>\r\n      </Balances>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>4edc4b51-91eb-468c-aea8-a8a0cb6c9545</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>Young Bros Transport</Name>\r\n      <Addresses>\r\n        <Address>\r\n
+        \         <AddressType>STREET</AddressType>\r\n        </Address>\r\n        <Address>\r\n
+        \         <AddressType>POBOX</AddressType>\r\n        </Address>\r\n      </Addresses>\r\n
+        \     <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>3435678</PhoneNumber>\r\n          <PhoneAreaCode>02</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n
+        \     <IsSupplier>true</IsSupplier>\r\n      <IsCustomer>true</IsCustomer>\r\n
+        \     <Balances>\r\n        <AccountsReceivable>\r\n          <Outstanding>0.00</Outstanding>\r\n
+        \         <Overdue>0.00</Overdue>\r\n        </AccountsReceivable>\r\n        <AccountsPayable>\r\n
+        \         <Outstanding>125.03</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsPayable>\r\n      </Balances>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>8696589a-a719-463b-8ff3-b58e0a08ab28</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Hamilton Smith
+        Ltd</Name>\r\n      <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>2345678</PhoneNumber>\r\n
+        \         <PhoneAreaCode>01</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>true</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>85fc5d12-c655-4587-91b4-b5bb77243bab</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Port &amp; Philip
+        Freight</Name>\r\n      <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \         <AttentionTo>Corporate Services</AttentionTo>\r\n        </Address>\r\n
+        \     </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>2323434</PhoneNumber>\r\n          <PhoneAreaCode>01</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>true</IsCustomer>\r\n
+        \     <HasAttachments>false</HasAttachments>\r\n    </Contact>\r\n    <Contact>\r\n
+        \     <ContactID>342a5560-dbb7-408f-835b-d93d49511d6d</ContactID>\r\n      <ContactStatus>ACTIVE</ContactStatus>\r\n
+        \     <Name>DIISR - Small Business Services</Name>\r\n      <EmailAddress>cad@diisr.govt</EmailAddress>\r\n
+        \     <SkypeUserName>maggie-diisr</SkypeUserName>\r\n      <Addresses>\r\n
+        \       <Address>\r\n          <AddressType>STREET</AddressType>\r\n        </Address>\r\n
+        \       <Address>\r\n          <AddressType>POBOX</AddressType>\r\n          <AddressLine1>GPO
+        9566</AddressLine1>\r\n          <City>Pinehaven</City>\r\n          <PostalCode>9862</PostalCode>\r\n
+        \         <AttentionTo>Corporate Accounting</AttentionTo>\r\n        </Address>\r\n
+        \     </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n          <PhoneType>DDI</PhoneType>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>DEFAULT</PhoneType>\r\n
+        \         <PhoneNumber>8009001</PhoneNumber>\r\n          <PhoneAreaCode>01</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>FAX</PhoneType>\r\n
+        \         <PhoneNumber>8009002</PhoneNumber>\r\n          <PhoneAreaCode>01</PhoneAreaCode>\r\n
+        \       </Phone>\r\n        <Phone>\r\n          <PhoneType>MOBILE</PhoneType>\r\n
+        \       </Phone>\r\n      </Phones>\r\n      <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n
+        \     <IsSupplier>false</IsSupplier>\r\n      <IsCustomer>true</IsCustomer>\r\n
+        \     <Balances>\r\n        <AccountsReceivable>\r\n          <Outstanding>270.63</Outstanding>\r\n
+        \         <Overdue>270.63</Overdue>\r\n        </AccountsReceivable>\r\n        <AccountsPayable>\r\n
+        \         <Outstanding>0.00</Outstanding>\r\n          <Overdue>0.00</Overdue>\r\n
+        \       </AccountsPayable>\r\n      </Balances>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>a8cb2a69-f2f4-4eb6-a240-ff51ee93dd74</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>Bank West</Name>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n          <PhoneNumber>2023456</PhoneNumber>\r\n
+        \         <PhoneAreaCode>02</PhoneAreaCode>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T18:03:42.323</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>true</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n    <Contact>\r\n      <ContactID>c0a64e06-4d52-4d8c-bbb8-f34eb4089546</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>7-Eleven (Seven
+        11)</Name>\r\n      <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T23:10:01.307</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n  </Contacts>\r\n</Response>"
+    http_version: 
+  recorded_at: Mon, 09 Oct 2017 01:29:47 GMT
+- request:
+    method: get
+    uri: https://api.xero.com/api.xro/2.0/Organisation
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Charset:
+      - utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.5.3
+      Authorization:
+      - OAuth oauth_consumer_key="<XERO_CONSUMER_KEY>", oauth_nonce="0VvkxkMC3hh1fzHWMj4crCT1OKuH4gxf42AnZcFKLSE",
+        oauth_signature="LbPUXnp82Jg7xFW%2BMLCgA%2FuYRbW%2FkhNvycDHbMg4UBeFh%2FD%2FJDARQoy7MLCIiPlJEcgPcba6Zit8ynsgpFUtzglQnzmSS8bKVI9ZhVZ0%2BMGUJ%2Fg86zWslZve6h4rDUqYy1AhyK7eOR96eqNkPRX47QnRmZGKQ04Sd4%2FMIRuJm6E%3D",
+        oauth_signature_method="RSA-SHA1", oauth_timestamp="1507512587", oauth_token="<XERO_CONSUMER_KEY>",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Mon, 09 Oct 2017 01:29:46 GMT
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '987'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: "<Response xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n
+        \ <Id>240983e0-cdb6-4397-9ef7-26fd69469538</Id>\r\n  <Status>OK</Status>\r\n
+        \ <ProviderName>Chch Ruby</ProviderName>\r\n  <DateTimeUTC>2017-10-09T01:29:48.2099554Z</DateTimeUTC>\r\n
+        \ <Organisations>\r\n    <Organisation>\r\n      <Name>Demo Company (NZ)</Name>\r\n
+        \     <LegalName>Demo Company (NZ)</LegalName>\r\n      <PaysTax>true</PaysTax>\r\n
+        \     <Version>NZ</Version>\r\n      <OrganisationType>COMPANY</OrganisationType>\r\n
+        \     <BaseCurrency>NZD</BaseCurrency>\r\n      <CountryCode>NZ</CountryCode>\r\n
+        \     <IsDemoCompany>true</IsDemoCompany>\r\n      <OrganisationStatus>ACTIVE</OrganisationStatus>\r\n
+        \     <TaxNumber>111-111-111</TaxNumber>\r\n      <FinancialYearEndDay>31</FinancialYearEndDay>\r\n
+        \     <FinancialYearEndMonth>3</FinancialYearEndMonth>\r\n      <SalesTaxBasis>PAYMENTS</SalesTaxBasis>\r\n
+        \     <SalesTaxPeriod>TWOMONTHS</SalesTaxPeriod>\r\n      <DefaultSalesTax>Remember
+        previous</DefaultSalesTax>\r\n      <DefaultPurchasesTax>Remember previous</DefaultPurchasesTax>\r\n
+        \     <PeriodLockDate>2009-09-30T00:00:00</PeriodLockDate>\r\n      <CreatedDateUTC>2017-10-08T08:58:56.75Z</CreatedDateUTC>\r\n
+        \     <OrganisationEntityType>COMPANY</OrganisationEntityType>\r\n      <Timezone>NEWZEALANDSTANDARDTIME</Timezone>\r\n
+        \     <ShortCode>!GjVms</ShortCode>\r\n      <OrganisationID>ef8a9fb0-5467-43b3-85dc-1e799a303a62</OrganisationID>\r\n
+        \     <Addresses>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \         <AddressLine1>23 Main Street</AddressLine1>\r\n          <AddressLine2>Central
+        City</AddressLine2>\r\n          <City>Marineville</City>\r\n          <PostalCode>1234</PostalCode>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>OFFICE</PhoneType>\r\n          <PhoneNumber>1234 5678</PhoneNumber>\r\n
+        \         <PhoneAreaCode>0800</PhoneAreaCode>\r\n        </Phone>\r\n      </Phones>\r\n
+        \   </Organisation>\r\n  </Organisations>\r\n</Response>"
+    http_version: 
+  recorded_at: Mon, 09 Oct 2017 01:29:48 GMT
+recorded_with: VCR 3.0.3
