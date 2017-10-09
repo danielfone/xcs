@@ -1,24 +1,25 @@
-# README
+# Contact Sync Refactoring App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple app that renders a list of contacts from the database,
+and allows a user to sync these with Xero.
 
-Things you may want to cover:
+There are basically 4 files to refactor:
 
-* Ruby version
+* app/contacts/contacts_controller.rb
+* app/views/contacts/index.html.erb
+* app/models/contacts.rb
+* app/jobs/contact_pull_job.rb
 
-* System dependencies
+Most but not quite all of the behaviour is spec'd, so while your refactoring
+should be fairly safe, its possible you could introduce a bug in and the suite
+is still green. Don't worry too much, it's the thought that counts.
 
-* Configuration
 
-* Database creation
+## Getting Started
 
-* Database initialization
+This was developed under Ruby 2.4.1, but should work for any modern Ruby.
+To check everything is working:
 
-* How to run the test suite
+    # start postgres server somewhere
+    bin/setup && bin/rspec
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
