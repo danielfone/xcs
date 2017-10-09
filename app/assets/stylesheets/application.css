@@ -73,6 +73,11 @@ tbody tr:hover dl.extra-data {
   visibility: visible;
 }
 
+dl ol {
+  margin: 0;
+  padding: 0;
+}
+
 dd {
   margin-bottom: 1em;
 }
