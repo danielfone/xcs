@@ -791,4 +791,68 @@ http_interactions:
       string: oauth_problem=consumer_key_unknown&oauth_problem_advice=Consumer%20key%20was%20not%20recognised
     http_version: 
   recorded_at: Tue, 10 Oct 2017 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.xero.com/api.xro/2.0/Contacts?includeArchived=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Charset:
+      - utf-8
+      If-Modified-Since:
+      - '2017-10-08T23:00:00'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.5.3
+      Authorization:
+      - OAuth oauth_consumer_key="<XERO_CONSUMER_KEY>", oauth_nonce="xRwJVzcgJApSnBHGULC6NHPRUBcYS4Jal8fXc5IkE4A",
+        oauth_signature="tPArw0%2FQzfju70Ffij%2FZkTOCJ%2BzADuX1Rv4JXRLo4h%2FBNmEGS%2BwljFpTaC9tlbW5eE80P9Ayc%2FnEz97uG8r6hzJ6B3WbTgQUDl7BeWKxhIsOHDI%2FT656f5%2FximDhLZp9jFNq3%2FZMrQ7HfIFoMUiV7Y5vMZGqbjCQb%2BKT0oVISRU%3D",
+        oauth_signature_method="RSA-SHA1", oauth_timestamp="1507536191", oauth_token="<XERO_CONSUMER_KEY>",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Mon, 09 Oct 2017 08:03:13 GMT
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '658'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: "<Response xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n
+        \ <Id>b720b321-1e64-4d87-9f44-d49d86151456</Id>\r\n  <Status>OK</Status>\r\n
+        \ <ProviderName>Chch Ruby</ProviderName>\r\n  <DateTimeUTC>2017-10-09T08:03:13.7723691Z</DateTimeUTC>\r\n
+        \ <Contacts>\r\n    <Contact>\r\n      <ContactID>c0a64e06-4d52-4d8c-bbb8-f34eb4089546</ContactID>\r\n
+        \     <ContactStatus>ACTIVE</ContactStatus>\r\n      <Name>7-Eleven (Seven
+        11)</Name>\r\n      <Addresses>\r\n        <Address>\r\n          <AddressType>STREET</AddressType>\r\n
+        \       </Address>\r\n        <Address>\r\n          <AddressType>POBOX</AddressType>\r\n
+        \       </Address>\r\n      </Addresses>\r\n      <Phones>\r\n        <Phone>\r\n
+        \         <PhoneType>DDI</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>DEFAULT</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>FAX</PhoneType>\r\n        </Phone>\r\n        <Phone>\r\n
+        \         <PhoneType>MOBILE</PhoneType>\r\n        </Phone>\r\n      </Phones>\r\n
+        \     <UpdatedDateUTC>2017-10-08T23:10:01.307</UpdatedDateUTC>\r\n      <IsSupplier>false</IsSupplier>\r\n
+        \     <IsCustomer>false</IsCustomer>\r\n      <HasAttachments>false</HasAttachments>\r\n
+        \   </Contact>\r\n  </Contacts>\r\n</Response>"
+    http_version: 
+  recorded_at: Mon, 09 Oct 2017 08:03:14 GMT
 recorded_with: VCR 3.0.3

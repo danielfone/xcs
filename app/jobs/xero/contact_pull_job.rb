@@ -8,6 +8,10 @@ module Xero
       Contact.update_all org_code: org_code
     end
 
+    def fetched_results
+      api_results.size
+    end
+
   private
 
     # https://developer.xero.com/documentation/api/organisation
@@ -18,7 +22,7 @@ module Xero
     def api_results
       Error.wrap do
         # https://developer.xero.com/documentation/api/contacts
-        api_client.Contact.all(
+        @api_results ||= api_client.Contact.all(
           modified_since: Contact.last_updated_at,
           include_archived: true,
         )

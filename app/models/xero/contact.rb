@@ -20,7 +20,7 @@ module Xero
         id: contact[:contact_id],
         name: contact[:name],
         status: (contact[:contact_status] || 'ACTIVE'),
-        updated_at: (contact[:updated_date_utc] if contact[:updated_date_utc]),
+        updated_at: contact[:updated_date_utc],
         synced_at: Time.current,
         data: contact.attributes,
       )
