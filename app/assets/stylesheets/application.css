@@ -37,6 +37,10 @@ a { text-decoration: none; }
   color: white;
 }
 
+.numeric {
+  text-align: right;
+}
+
 table {
   border-collapse: collapse;
 }

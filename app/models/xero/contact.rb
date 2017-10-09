@@ -22,7 +22,7 @@ module Xero
         status: (contact[:contact_status] || 'ACTIVE'),
         updated_at: contact[:updated_date_utc],
         synced_at: Time.current,
-        data: contact.attributes,
+        data: contact.to_h,
       )
     end
 
