@@ -38,8 +38,13 @@ module Xero
         status: (contact[:contact_status] || 'ACTIVE'),
         updated_at: contact[:updated_date_utc],
         synced_at: Time.current,
-        data: contact.to_h
+        data: contact.to_h,
+        org_code: org_code
       )
+    end
+
+    def org_code
+      @org_code ||= api_client.Organisation.first.short_code
     end
   end
 end
