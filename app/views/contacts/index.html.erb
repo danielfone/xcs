@@ -31,7 +31,9 @@
     <% @contacts.each do |contact| %>
       <tr class="<%= 'struck-out-element' if contact.muted? %>">
         <td>
-          <%= external_link_to(contact.name, contact.xero_url) %>
+          <%= link_to contact.xero_url do %>
+            <%= contact.name %> <sup class="fa fa-external-link" aria-hidden="true"></sup>
+          <% end %>
         </td>
         <td>
           <%= contact.status %>
