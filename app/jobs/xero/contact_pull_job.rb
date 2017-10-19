@@ -2,7 +2,7 @@ module Xero
   class ContactPullJob < ApplicationJob
 
     def perform
-      Upserter.upsert_api_response(api_results, org_code)
+      Upserter.new(results: api_results, org_code: org_code).upsert_api_response
     end
 
     def fetched_results
