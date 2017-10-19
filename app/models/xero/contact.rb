@@ -10,27 +10,6 @@ module Xero
         where status: 'ACTIVE'
       end
 
-      def upsert_api_response(results, *args, &block)
-        transaction do
-          Array.wrap(results).each do |result|
-            upsert_api_result(result, *args, &block)
-          end
-        end
-      end
-
-      def upsert_api_result(contact, org_code)
-        # https://github.com/jesjos/active_record_upsert
-        upsert(
-          id: contact[:contact_id],
-          name: contact[:name],
-          status: (contact[:contact_status] || 'ACTIVE'),
-          updated_at: contact[:updated_date_utc],
-          synced_at: Time.current,
-          data: contact.to_h,
-          org_code: org_code
-        )
-      end
-
       def last_updated_at
         maximum(:updated_at)
       end
