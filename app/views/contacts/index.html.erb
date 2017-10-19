@@ -6,7 +6,7 @@
   <%= render partial: 'never_synced', locals: { contacts: @contacts } %>
 <% end %>
 
-<%= button_to "Sync Now", action: :sync %>
+<%= button_to "Sync Now", action: :perform %>
 
 <table>
   <thead>
