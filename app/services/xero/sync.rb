@@ -2,8 +2,8 @@ module Xero
   class Sync
     attr_reader :api_client
 
-    def initialize(api_client)
-      @api_client = api_client
+    def initialize
+      @api_client = Xero::Client.new.api_client
     end
 
     def perform
