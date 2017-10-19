@@ -19,4 +19,16 @@ class ContactIndexPresenter
     end
   end
 
+  def sync_info
+    if contacts.any?
+      "Last synced #{v.time_ago_in_words(contacts.last_synced_at)} ago."
+    else
+      "Never synced."
+    end
+  end
+
+  def sync_button
+    v.button_to("Sync Now", action: :sync)
+  end
+
 end

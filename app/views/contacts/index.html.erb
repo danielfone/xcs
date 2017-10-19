@@ -1,16 +1,9 @@
 <h2>Xero Contacts</h2>
 
-<p>
-  <%= @presenter.collection_info %>
-</p>
+<p><%= @presenter.collection_info %></p>
+<p><%= @presenter.sync_info %></p>
 
-<% if @presenter.contacts.any? %>
-  <p>Last synced <%= time_ago_in_words(@presenter.contacts.last_synced_at) %> ago.</p>
-<% else %>
-  <p>Never synced.</p>
-<% end %>
-
-<%= button_to "Sync Now", action: :sync %>
+<%= @presenter.sync_button %>
 
 <table>
   <thead>
