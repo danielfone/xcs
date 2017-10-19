@@ -2,7 +2,7 @@ module Xero
   class Contact < ApplicationRecord
     DEEP_LINK_URL = "https://go.xero.com/organisationlogin/default.aspx?" \
       "shortcode=%<shortcode>s&" \
-      "redirecturl=%<target_url>s"
+      "redirecturl=%<target_url>s".freeze
 
     scope :active, -> { where status: 'ACTIVE' }
 
