@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
   rescue_from Xero::Error, with: :render_xero_error
 
   def index
-    @contacts = Xero::Contact.all.order(:name)
+    @presenter = ContactIndexPresenter.new(view_context)
   end
 
   def sync
