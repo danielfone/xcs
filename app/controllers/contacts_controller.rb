@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
     redirect_back fallback_location: :index
   end
 
-private
+  private
 
   def external_link_to(name = nil, options = nil, html_options={})
     view_context.link_to options, html_options.merge(target: '_blank') do
