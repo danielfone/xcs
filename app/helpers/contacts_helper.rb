@@ -7,4 +7,12 @@ module ContactsHelper
       ], ' '
     end
   end
+
+  def formatted_value(value)
+    return value unless Array === value
+
+    content_tag(:ol) do
+      safe_join value.map { |v| content_tag(:li, formatted_value(v)) }
+    end
+  end
 end

@@ -43,7 +43,7 @@
           <dl class="extra-data">
           <% contact.data.each do |attr, value| %>
             <dt><%= attr.titleize %></dt>
-            <dd><%= contact.formatted_value(value, self) %></dd>
+            <dd><%= formatted_value(value) %></dd>
           <% end %>
           </dl>
         </td>
