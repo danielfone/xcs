@@ -18,19 +18,19 @@
   <tbody>
     <% @presenter.each_contact_row do |contact| %>
       <td>
-        <%= external_link_to(contact.name, contact.xero_url) %>
+        <%= contact.xero_link %>
       </td>
       <td>
         <%= contact.status %>
       </td>
       <td class="numeric">
-        <%= number_to_currency contact.data.dig('balances', 'accounts_receivable', 'outstanding') %>
+        <%= contact.outstanding %>
       </td>
       <td>
         <dl class="extra-data">
-        <% contact.data.each do |attr, value| %>
-        <dt><%= attr.titleize %></dt>
-        <dd><%= contact.formatted_value(value, self) %></dd>
+        <% contact.formatted_data.each do |attr, value| %>
+          <dt><%= attr.titleize %></dt>
+          <dd><%= value %></dd>
         <% end %>
         </dl>
       </td>
