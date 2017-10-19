@@ -44,5 +44,9 @@ module Xero
     def muted?
       status == 'ARCHIVED'
     end
+
+    def outstanding_balance
+      data.dig('balances', 'accounts_receivable', 'outstanding')
+    end
   end
 end

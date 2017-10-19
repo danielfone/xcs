@@ -8,7 +8,7 @@
     <%= contact.status %>
   </td>
   <td class="numeric">
-    <%= number_to_currency contact.data.dig('balances', 'accounts_receivable', 'outstanding') %>
+    <%= number_to_currency contact.outstanding_balance %>
   </td>
   <td>
     <dl class="extra-data">
