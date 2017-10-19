@@ -17,7 +17,6 @@ RSpec.describe Xero::ContactPullJob do
     }
 
     expect { job.perform }.not_to change { Xero::Contact.count }
-    expect(job.fetched_results).to eq 1
     contact.reload
     expect(contact.name).to eq "7-Eleven (Seven 11)"
     expect(contact.org_code).to eq "!GjVms"
