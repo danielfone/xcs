@@ -40,6 +40,10 @@ module Xero
       end
     end
 
+    def muted?
+      status == 'ARCHIVED'
+    end
+
     def outstanding
       data.dig(
         'balances',
@@ -55,10 +59,6 @@ module Xero
         shortcode: org_code,
         target_url: format(CONTACT_VIEW_PATH, id: id)
       )
-    end
-
-    def muted?
-      status == 'ARCHIVED'
     end
 
   end
