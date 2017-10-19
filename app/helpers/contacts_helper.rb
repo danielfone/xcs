@@ -7,4 +7,15 @@ module ContactsHelper
       ], ' '
     end
   end
+
+  def formatted_data_attribute(value)
+    case value
+    when Array
+      content_tag(:ol) do
+        safe_join value.map { |v| content_tag(:li, formatted_data_attribute(v)) }
+      end
+    else
+      value
+    end
+  end
 end

@@ -43,17 +43,5 @@ module Xero
     def muted?
       status == 'ARCHIVED'
     end
-
-    def formatted_value(value, view_context)
-      case value
-      when Array
-        view_context.content_tag(:ol) do
-          view_context.safe_join value.map { |v| view_context.content_tag(:li, formatted_value(v, view_context)) }
-        end
-      else
-        value
-      end
-    end
-
   end
 end
