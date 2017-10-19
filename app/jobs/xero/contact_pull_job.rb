@@ -2,10 +2,7 @@ module Xero
   class ContactPullJob < ApplicationJob
 
     def perform
-      Contact.upsert_api_response(api_results)
-      # I wish we could just add the org code to each record
-      # as we were saving it…
-      Contact.update_all org_code: org_code
+      Contact.upsert_api_response(api_results, org_code)
     end
 
     def fetched_results

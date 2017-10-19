@@ -6,19 +6,20 @@ module Xero
 
     scope :active, -> { where status: 'ACTIVE' }
 
-    def self.upsert_api_response(results, *args, &block)
+    def self.upsert_api_response(results, org_code)
       transaction do
         Array.wrap(results).each do |result|
-          upsert_api_result(result, *args, &block)
+          upsert_api_result(result, org_code)
         end
       end
     end
 
-    def self.upsert_api_result(contact)
+    def self.upsert_api_result(contact, org_code)
       # https://github.com/jesjos/active_record_upsert
       upsert(
         id: contact[:contact_id],
         name: contact[:name],
+        org_code: org_code,
         status: (contact[:contact_status] || 'ACTIVE'),
         updated_at: contact[:updated_date_utc],
         synced_at: Time.current,
@@ -44,16 +45,8 @@ module Xero
       status == 'ARCHIVED'
     end
 
-    def formatted_value(value, view_context)
-      case value
-      when Array
-        view_context.content_tag(:ol) do
-          view_context.safe_join value.map { |v| view_context.content_tag(:li, formatted_value(v, view_context)) }
-        end
-      else
-        value
-      end
+    def outstanding_balance
+      data.dig('balances', 'accounts_receivable', 'outstanding')
     end
-
   end
 end
