@@ -2,8 +2,8 @@ class ContactsController < ApplicationController
 
   rescue_from Xero::Error, with: :render_xero_error
 
-  def index
-    @contacts = Xero::Contact.order(:name)
+  helper_method def contacts
+    @contacts ||= Xero::Contact.order(:name)
   end
 
   def sync
