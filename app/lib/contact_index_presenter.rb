@@ -31,4 +31,11 @@ class ContactIndexPresenter
     v.button_to("Sync Now", action: :sync)
   end
 
+  def each_contact_row(&block)
+    contacts.each do |contact|
+      dom_class = 'struck-out-element' if contact.archived?
+      v.content_tag(:tr, v.capture(contact, &block), class: dom_class)
+    end
+  end
+
 end
