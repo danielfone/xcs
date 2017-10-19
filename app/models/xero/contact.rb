@@ -38,6 +38,14 @@ module Xero
       end
     end
 
+    def outstanding
+      data.dig(
+        'balances',
+        'accounts_receivable',
+        'outstanding'
+      )
+    end
+
     # https://developer.xero.com/documentation/api-guides/deep-link-xero
     def xero_url
       target = "/Contacts/View.aspx?contactID=#{id}"
