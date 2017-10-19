@@ -1,0 +1,21 @@
+<tr class="<%= 'struck-out-element' if contact.muted? %>">
+  <td>
+    <%= link_to contact.xero_url do %>
+      <%= contact.name %> <sup class="fa fa-external-link" aria-hidden="true"></sup>
+    <% end %>
+  </td>
+  <td>
+    <%= contact.status %>
+  </td>
+  <td class="numeric">
+    <%= number_to_currency contact.data.dig('balances', 'accounts_receivable', 'outstanding') %>
+  </td>
+  <td>
+    <dl class="extra-data">
+    <% contact.data.each do |attr, value| %>
+      <dt><%= attr.titleize %></dt>
+      <dd><%= formatted_value(value) %></dd>
+    <% end %>
+    </dl>
+  </td>
+</tr>
