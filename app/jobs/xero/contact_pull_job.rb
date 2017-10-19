@@ -14,19 +14,8 @@ module Xero
       @org_code ||= api_client.Organisation.first.short_code
     end
 
-    # https://github.com/waynerobinson/xeroizer
     def api_client
-      @api_client ||= Xeroizer::PrivateApplication.new(
-        secrets[:consumer_key],
-        secrets[:consumer_secret],
-        nil,
-        private_key: secrets[:private_key],
-        # logger: Logger.new(STDOUT)
-      )
-    end
-
-    def secrets
-      Rails.application.secrets[:xero]
+      Xero::Client.new.api_client
     end
   end
 end
