@@ -17,7 +17,7 @@ module Xero
         end
       end
 
-      def upsert_api_result(contact)
+      def upsert_api_result(contact, org_code)
         # https://github.com/jesjos/active_record_upsert
         upsert(
           id: contact[:contact_id],
@@ -26,6 +26,7 @@ module Xero
           updated_at: contact[:updated_date_utc],
           synced_at: Time.current,
           data: contact.to_h,
+          org_code: org_code
         )
       end
 
