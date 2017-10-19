@@ -12,7 +12,7 @@ module Xero
       api_results.size
     end
 
-  private
+    private
 
     # https://developer.xero.com/documentation/api/organisation
     def org_code
