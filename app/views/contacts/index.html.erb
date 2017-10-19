@@ -1,21 +1,9 @@
 <h2>Xero Contacts</h2>
 
-<p>
-  <% if @contacts.any? %>
-    Showing <%= pluralize(@contacts.size, "contacts") %>,
-    last modified <%= time_ago_in_words(@contacts.last_updated_at) %> ago.
-  <% else %>
-    Showing <%= pluralize(@contacts.size, "contacts") %>.
-  <% end %>
-</p>
+<p><%= @presenter.collection_info %></p>
+<p><%= @presenter.sync_info %></p>
 
-<% if @contacts.any? %>
-  <p>Last synced <%= time_ago_in_words(@contacts.last_synced_at) %> ago.</p>
-<% else %>
-  <p>Never synced.</p>
-<% end %>
-
-<%= button_to "Sync Now", action: :sync %>
+<%= @presenter.sync_button %>
 
 <table>
   <thead>
@@ -28,26 +16,25 @@
   </thead>
 
   <tbody>
-    <% @contacts.each do |contact| %>
-      <tr class="<%= 'struck-out-element' if contact.muted? %>">
-        <td>
-          <%= external_link_to(contact.name, contact.xero_url) %>
-        </td>
-        <td>
-          <%= contact.status %>
-        </td>
-        <td class="numeric">
-          <%= number_to_currency contact.data.dig('balances', 'accounts_receivable', 'outstanding') %>
-        </td>
-        <td>
-          <dl class="extra-data">
-          <% contact.data.each do |attr, value| %>
+    <% @presenter.each_contact_row do |contact| %>
+      <td>
+        <%= contact.xero_link %>
+      </td>
+      <td>
+        <%= contact.status %>
+      </td>
+      <td class="numeric">
+        <%= contact.outstanding %>
+      </td>
+      <td>
+        <dl class="extra-data">
+        <% contact.formatted_data.each do |attr, value| %>
           <dt><%= attr.titleize %></dt>
-          <dd><%= contact.formatted_value(value, self) %></dd>
-          <% end %>
-          </dl>
-        </td>
-      </tr>
+          <dd><%= value %></dd>
+        <% end %>
+        </dl>
+      </td>
+    </tr>
     <% end %>
   </tbody>
 </table>
