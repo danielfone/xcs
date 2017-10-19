@@ -18,8 +18,11 @@ is still green. Don't worry too much, it's the thought that counts.
 ## Getting Started
 
 This was developed under Ruby 2.4.1, but should work for any modern Ruby.
-To check everything is working:
 
-    # start postgres server somewhere
-    bin/setup && bin/rspec
-
+1. Get the secrets file and put it in config/secrets.yml
+2. Check everything is working:
+```
+# start postgres server somewhere
+bin/setup && bin/rspec
+```
+3. Run the server if you like: `bin/rails server`
