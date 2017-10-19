@@ -1,18 +1,9 @@
 <h2>Xero Contacts</h2>
 
-<p>
-  <% if @contacts.any? %>
-    Showing <%= pluralize(@contacts.size, "contacts") %>,
-    last modified <%= time_ago_in_words(@contacts.last_updated_at) %> ago.
-  <% else %>
-    Showing <%= pluralize(@contacts.size, "contacts") %>.
-  <% end %>
-</p>
-
 <% if @contacts.any? %>
-  <p>Last synced <%= time_ago_in_words(@contacts.last_synced_at) %> ago.</p>
+  <%= render partial: 'contacts_present', locals: { contacts: @contacts } %>
 <% else %>
-  <p>Never synced.</p>
+  <%= render partial: 'never_synced', locals: { contacts: @contacts } %>
 <% end %>
 
 <%= button_to "Sync Now", action: :sync %>
