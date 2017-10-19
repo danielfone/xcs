@@ -7,8 +7,8 @@ There are basically 4 files to refactor:
 
 * app/contacts/contacts_controller.rb
 * app/views/contacts/index.html.erb
-* app/models/contacts.rb
-* app/jobs/contact_pull_job.rb
+* app/models/xero/contact.rb
+* app/jobs/xero/contact_pull_job.rb
 
 Most but not quite all of the behaviour is spec'd, so while your refactoring
 should be fairly safe, its possible you could introduce a bug in and the suite
