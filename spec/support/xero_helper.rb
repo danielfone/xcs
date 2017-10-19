@@ -23,7 +23,7 @@ module XeroHelper
     )
   end
 
-private
+  private
 
   def xero_config
     Rails.application.secrets[:xero]

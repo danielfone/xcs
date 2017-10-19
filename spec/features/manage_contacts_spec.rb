@@ -16,9 +16,9 @@ RSpec.feature 'Manage Xero contacts', type: :feature do
     click_on 'Sync Now'
 
     expect(page).to have_content <<-PAGE
-      Showing 45 contacts, last modified 1 day ago.
+      Showing 45 contacts. Last modified: 1 day ago.
 
-      Last synced less than a minute ago.
+      Last synced: less than a minute ago.
 
       Name      Status Owing
       24 Locks  ACTIVE

@@ -28,7 +28,7 @@ module Xero
       end
     end
 
-  private
+   private
 
     def type_key
       @type_key ||= ERRORS.keys.find { |k| cause.is_a?(k) }
